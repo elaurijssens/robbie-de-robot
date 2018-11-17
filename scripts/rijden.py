@@ -43,6 +43,8 @@ def afstand():
 
 robby = Robot(left = (7, 8), right = (9, 10))
 
+bocht = 0.1
+
 while True:
 
     d = afstand()
@@ -50,13 +52,13 @@ while True:
     print('Afstand is {:f}'.format(d))
 
     if d > 60:
-        robby.forward(1)
+        robby.forward(1, curve_right = bocht )
         time.sleep(0.2)
     elif (d > 40) & (d < 60):
-        robby.forward((d - 40) / 20)
+        robby.forward((d - 40) / 20, curve_right = bocht )
         time.sleep(0.2)
     elif d < 10:
-        robby.backward(0.5)
+        robby.backward(0.5 , curve_right = bocht )
         time.sleep(1)
         robby.left(1)
         time.sleep(3)
