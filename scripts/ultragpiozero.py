@@ -1,7 +1,7 @@
 from gpiozero import DistanceSensor
 from time import sleep
 
-sensor = DistanceSensor(23, 24)
+sensor = DistanceSensor(17, 27)
 
 while True:
     print('Distance to nearest object is', sensor.distance, 'm')
