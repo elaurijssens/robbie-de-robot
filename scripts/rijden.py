@@ -43,7 +43,7 @@ def afstand():
 
 robby = Robot(left = (7, 8), right = (9, 10))
 
-bocht = 0.15
+bocht = 0.16
 
 while True:
 
