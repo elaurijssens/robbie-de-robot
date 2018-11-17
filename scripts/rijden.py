@@ -48,11 +48,9 @@ while True:
     d = afstand()
 
     if d > 20:
-        snelheid = 1
+        robby.forward(1)
     elif d < 10:
-        snelheid = -0.2
+        robby.backward(0.5)
     else:
-        snelheid = 0
-
-    robby.forward(snelheid)
+        robby.stop()
 
