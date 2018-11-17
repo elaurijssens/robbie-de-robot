@@ -49,6 +49,7 @@ while True:
 
     if d > 20:
         robby.forward(1)
+        time.sleep(0.1)
         robby.right(0.1)
     elif d < 10:
         robby.backward(0.5)
