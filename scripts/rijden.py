@@ -52,7 +52,7 @@ while True:
     if d > 40:
         robby.forward(1)
         time.sleep(0.2)
-    if d > 20:
+    if (d > 20) & (d < 40):
         robby.forward((d - 20) / 20)
         time.sleep(0.2)
     elif d < 10:
