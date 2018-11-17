@@ -47,7 +47,7 @@ while True:
 
     d = afstand()
 
-    print("Afstand is $1".format(d))
+    print("Afstand is %1".format(d))
 
     if d > 40:
         robby.forward(1)
