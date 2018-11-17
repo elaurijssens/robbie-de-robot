@@ -62,4 +62,8 @@ while True:
         time.sleep(3)
     else:
         robby.stop()
+        time.sleep(2)
+        robby.left()
+        robby.right()
+        robby.left()
 
