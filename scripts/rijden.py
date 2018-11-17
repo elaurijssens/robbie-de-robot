@@ -63,10 +63,14 @@ while True:
     else:
         robby.stop()
         time.sleep(2)
-        robby.left()
-        time.sleep(0.1)
-        robby.right()
-        time.sleep(0.1)
-        robby.left()
-        time.sleep(0.1)
+
+        kwispel = 0
+
+        while kwispel < 20:
+            robby.left()
+            time.sleep(0.1)
+            robby.right()
+            time.sleep(0.1)
+            kwispel = kwispel + 1
+
 
