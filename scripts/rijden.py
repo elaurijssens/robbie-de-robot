@@ -53,6 +53,9 @@ while True:
         robby.right(0.1)
     elif d < 10:
         robby.backward(0.5)
+        time.sleep(1)
+        robby.left(1)
+        time.sleep(3)
     else:
         robby.stop()
 
