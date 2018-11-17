@@ -40,8 +40,8 @@ def afstand():
 
     return distance
 
-robby = Robot(left = (7, 8), right = (9, 10))
 
+robby = Robot(left = (7, 8), right = (9, 10))
 
 while True:
 
@@ -49,7 +49,7 @@ while True:
 
     if d > 20:
         robby.forward(1)
-        time.sleep(0.1)
+        time.sleep(0.2)
         robby.right(0.1)
     elif d < 10:
         robby.backward(0.5)
